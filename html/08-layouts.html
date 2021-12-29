@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+
+		<section>
+
+           
+
+			<article>
+
+				
+                
+		<div>
+			<img src="./images/gilber keith.jfif" alt="Gilbert">
+		</div>
+		
+		<p>“O objetivo de um ano novo não é que nós deveríamos ter um ano novo. É que nós deveríamos ter uma alma nova.” </p>
+        <p>(Gilbert Keith Chesterton)</p>
+<p>Um dos primeiros erros do mundo moderno é presumir, profunda e tacitamente, que as coisas passadas se tornaram impossíveis. Eis uma metáfora pela qual os modernos são apaixonados; sempre dizem: «Não se pode atrasar o pêndulo». A resposta é clara e simples: «Pode-se sim». Um pêndulo, que é um objecto construído pelo homem, pode ser modificado por um dedo humano a qualquer hora. Assim, a sociedade, que é um objecto de construção humana, pode ser reconstituído sob qualquer forma já experimentada.</p>
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Uma reflexão para o novo ano</p>
+		</footer>
+		
+	</body>
+</html>

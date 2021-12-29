@@ -1,0 +1,141 @@
+/* 
+
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%; /* equivalente a 10px */
+}
+
+body {
+	background-color:white
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+form {
+	background: rgb(116, 110, 110);
+	padding: 10px;
+}
+
+form div {
+	background: #fff;
+	border-bottom: 1px solid #33f;
+	margin: 1rem;
+	padding: 2rem;
+}
+
+label {
+	margin-bottom: 1rem;
+	font-size: 1.4rem; 
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #66F;
+}
+
+input {
+	padding: 1rem;
+}
+
+[type="text"], [type="email"], textarea, label {
+	display: block;
+	width: 100%;
+}
+
+header {
+  background-color: brown ;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white
+}
+
+nav {
+  float: left;
+  width: 30%;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: white
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+iframe {
+  width: 100%;
+  }
+  
+  
+  /* Mobile First */
+  
+  
+  /*Tablet */
+  @media (min-width: 760px) {
+  
+  
+  
+  
+  }
+  @media (max-width: 768px) {
+  @media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+  @media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+  @media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+  @media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+  @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+  @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+  
+  
+  }
+  
+  /*smartphone */ 
+  @media (max-width:425px){
+     nav,
+     artcle,
+     .coluna {
+     wisth: 100%
+     min-width: 320px;
+     }
+  
+   }
+  
